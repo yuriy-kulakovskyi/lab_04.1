@@ -19,6 +19,16 @@ int main() {
 
   cout << S << endl;
 
+  i = 1;
+  S = 0;
+
+  do {
+    S += (sin(10 * i) + cos(10 / i)) / sqrt(i);
+    i++;
+  } while (i <= N);
+
+  cout << S << endl;
+
   S = 0;
 
   for (i = 1; i <= N; i++) {
@@ -27,15 +37,6 @@ int main() {
 
   cout << S << endl;
 
-  S = 0;
-  i = 1;
-
-  do {
-    S += (sin(10 * i) + cos(10 / i)) / sqrt(i);
-    i++;
-  } while (i <= N);
-
-  cout << S << endl;
 
   S = 0;
 
